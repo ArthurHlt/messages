@@ -5,6 +5,7 @@ package messages
 import (
 	"context"
 	"fmt"
+	"github.com/jwalton/go-supportscolor"
 	"io"
 	"os"
 	"time"
@@ -15,7 +16,9 @@ import (
 )
 
 var output = os.Stderr
-var c = aurora.New(aurora.WithColors(isatty.IsTerminal(output.Fd())))
+
+var supportColor = supportscolor.SupportsColor(output.Fd())
+var c *aurora.Aurora
 
 var spinner Spinner
 var forcedTty = false
@@ -33,6 +36,7 @@ var spinConfig = &yacspin.Config{
 }
 
 func init() {
+	c = aurora.New(aurora.WithColors(supportColor.SupportsColor))
 	if !isTerminal {
 		spinner = &NullSpinner{}
 		return
@@ -74,6 +78,7 @@ func SetContextValue(key, value any) {
 }
 
 func ForceTty() {
+	supportscolor.IsTTYOption(true)
 	c = aurora.New(aurora.WithColors(true))
 	forcedTty = true
 	isTerminal = true
@@ -85,18 +90,24 @@ func ForceTty() {
 	}
 }
 
+func SetColor(color bool) {
+	c = aurora.New(aurora.WithColors(color))
+}
+
 func UseStdout() {
 	output = os.Stdout
+	supportColor = supportscolor.SupportsColor(output.Fd())
 	if !forcedTty {
-		c = aurora.New(aurora.WithColors(isatty.IsTerminal(output.Fd())))
+		c = aurora.New(aurora.WithColors(supportColor.SupportsColor))
 		isTerminal = isatty.IsTerminal(output.Fd())
 	}
 }
 
 func UseStderr() {
 	output = os.Stderr
+	supportColor = supportscolor.SupportsColor(output.Fd())
 	if !forcedTty {
-		c = aurora.New(aurora.WithColors(isatty.IsTerminal(output.Fd())))
+		c = aurora.New(aurora.WithColors(supportColor.SupportsColor))
 		isTerminal = isatty.IsTerminal(output.Fd())
 	}
 }
