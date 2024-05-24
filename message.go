@@ -209,3 +209,7 @@ func GetSpinner(forceNull ...bool) Spinner {
 func SetSpinner(s Spinner) {
 	spinner = s
 }
+
+func SetVerbose(v bool) {
+	verbose = v
+}
