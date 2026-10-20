@@ -112,19 +112,19 @@ func UseStderr() {
 	}
 }
 
-func Println(a ...interface{}) (n int, err error) {
+func Println(a ...any) (n int, err error) {
 	return fmt.Fprintln(output, a...)
 }
 
-func Print(a ...interface{}) (n int, err error) {
+func Print(a ...any) (n int, err error) {
 	return fmt.Fprint(output, a...)
 }
 
-func Printf(format string, a ...interface{}) (n int, err error) {
+func Printf(format string, a ...any) (n int, err error) {
 	return fmt.Fprintf(output, format, a...)
 }
 
-func Printfln(format string, a ...interface{}) (n int, err error) {
+func Printfln(format string, a ...any) (n int, err error) {
 	return fmt.Fprintf(output, format+"\n", a...)
 }
 
@@ -132,7 +132,7 @@ func Error(str string) {
 	Printfln("%s %s", c.Red("Error"), str)
 }
 
-func Errorf(format string, a ...interface{}) {
+func Errorf(format string, a ...any) {
 	Printf("%s ", c.Red("Error"))
 	Printfln(format, a...)
 }
@@ -144,7 +144,7 @@ func Debug(str string) {
 	Printfln("%s %s", c.Gray(18, "Debug"), str)
 }
 
-func Debugf(format string, a ...interface{}) {
+func Debugf(format string, a ...any) {
 	if !verbose {
 		return
 	}
@@ -157,7 +157,7 @@ func Fatal(str string) {
 	os.Exit(1)
 }
 
-func Fatalf(format string, a ...interface{}) {
+func Fatalf(format string, a ...any) {
 	Printf("%s ", c.Red("Error"))
 	Printfln(format, a...)
 	os.Exit(1)
@@ -167,7 +167,7 @@ func Warning(str string) {
 	Printfln("%s %s", c.Yellow("Warning"), str)
 }
 
-func Warningf(format string, a ...interface{}) {
+func Warningf(format string, a ...any) {
 	Printf("%s ", c.Yellow("Warning"))
 	Printfln(format, a...)
 }
@@ -176,7 +176,7 @@ func Success(str string) {
 	Printfln("%s %s", c.Green("Success"), str)
 }
 
-func Successf(format string, a ...interface{}) {
+func Successf(format string, a ...any) {
 	Printf("%s ", c.Green("Success"))
 	Printfln(format, a...)
 }
@@ -185,7 +185,7 @@ func Info(str string) {
 	Printfln("%s %s", c.Cyan("Info"), str)
 }
 
-func Infof(format string, a ...interface{}) {
+func Infof(format string, a ...any) {
 	Printf("%s ", c.Cyan("Info"))
 	Printfln(format, a...)
 }
@@ -194,7 +194,7 @@ func Tips(str string) {
 	Printfln("%s %s", c.Cyan("Tips"), str)
 }
 
-func Tipsf(format string, a ...interface{}) {
+func Tipsf(format string, a ...any) {
 	Printf("%s ", c.Cyan("Tips"))
 	Printfln(format, a...)
 }

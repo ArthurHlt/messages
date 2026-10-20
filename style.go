@@ -2,246 +2,246 @@ package messages
 
 import "github.com/logrusorgru/aurora/v4"
 
-func Reset(arg interface{}) aurora.Value {
+func Reset(arg any) aurora.Value {
 	return c.Reset(arg)
 }
 
-func Clear(arg interface{}) aurora.Value {
+func Clear(arg any) aurora.Value {
 	return c.Clear(arg)
 }
 
-func Bold(arg interface{}) aurora.Value {
+func Bold(arg any) aurora.Value {
 	return c.Bold(arg)
 }
 
-func Faint(arg interface{}) aurora.Value {
+func Faint(arg any) aurora.Value {
 	return c.Faint(arg)
 }
 
-func DoublyUnderline(arg interface{}) aurora.Value {
+func DoublyUnderline(arg any) aurora.Value {
 	return c.DoublyUnderline(arg)
 }
 
-func Fraktur(arg interface{}) aurora.Value {
+func Fraktur(arg any) aurora.Value {
 	return c.Fraktur(arg)
 }
 
-func Italic(arg interface{}) aurora.Value {
+func Italic(arg any) aurora.Value {
 	return c.Italic(arg)
 }
 
-func Underline(arg interface{}) aurora.Value {
+func Underline(arg any) aurora.Value {
 	return c.Underline(arg)
 }
 
-func SlowBlink(arg interface{}) aurora.Value {
+func SlowBlink(arg any) aurora.Value {
 	return c.SlowBlink(arg)
 }
 
-func RapidBlink(arg interface{}) aurora.Value {
+func RapidBlink(arg any) aurora.Value {
 	return c.RapidBlink(arg)
 }
 
-func Blink(arg interface{}) aurora.Value {
+func Blink(arg any) aurora.Value {
 	return c.Blink(arg)
 }
 
-func Reverse(arg interface{}) aurora.Value {
+func Reverse(arg any) aurora.Value {
 	return c.Reverse(arg)
 }
 
-func Inverse(arg interface{}) aurora.Value {
+func Inverse(arg any) aurora.Value {
 	return c.Inverse(arg)
 }
 
-func Conceal(arg interface{}) aurora.Value {
+func Conceal(arg any) aurora.Value {
 	return c.Conceal(arg)
 }
 
-func Hidden(arg interface{}) aurora.Value {
+func Hidden(arg any) aurora.Value {
 	return c.Hidden(arg)
 }
 
-func CrossedOut(arg interface{}) aurora.Value {
+func CrossedOut(arg any) aurora.Value {
 	return c.CrossedOut(arg)
 }
 
-func StrikeThrough(arg interface{}) aurora.Value {
+func StrikeThrough(arg any) aurora.Value {
 	return c.StrikeThrough(arg)
 }
 
-func Framed(arg interface{}) aurora.Value {
+func Framed(arg any) aurora.Value {
 	return c.Framed(arg)
 }
 
-func Encircled(arg interface{}) aurora.Value {
+func Encircled(arg any) aurora.Value {
 	return c.Encircled(arg)
 }
 
-func Overlined(arg interface{}) aurora.Value {
+func Overlined(arg any) aurora.Value {
 	return c.Overlined(arg)
 }
 
-func Black(arg interface{}) aurora.Value {
+func Black(arg any) aurora.Value {
 	return c.Black(arg)
 }
 
-func Red(arg interface{}) aurora.Value {
+func Red(arg any) aurora.Value {
 	return c.Red(arg)
 }
 
-func Green(arg interface{}) aurora.Value {
+func Green(arg any) aurora.Value {
 	return c.Green(arg)
 }
 
-func Yellow(arg interface{}) aurora.Value {
+func Yellow(arg any) aurora.Value {
 	return c.Yellow(arg)
 }
 
-func Blue(arg interface{}) aurora.Value {
+func Blue(arg any) aurora.Value {
 	return c.Blue(arg)
 }
 
-func Magenta(arg interface{}) aurora.Value {
+func Magenta(arg any) aurora.Value {
 	return c.Magenta(arg)
 }
 
-func Cyan(arg interface{}) aurora.Value {
+func Cyan(arg any) aurora.Value {
 	return c.Cyan(arg)
 }
 
-func White(arg interface{}) aurora.Value {
+func White(arg any) aurora.Value {
 	return c.White(arg)
 }
 
-func BrightBlack(arg interface{}) aurora.Value {
+func BrightBlack(arg any) aurora.Value {
 	return c.BrightBlack(arg)
 }
 
-func BrightRed(arg interface{}) aurora.Value {
+func BrightRed(arg any) aurora.Value {
 	return c.BrightRed(arg)
 }
 
-func BrightGreen(arg interface{}) aurora.Value {
+func BrightGreen(arg any) aurora.Value {
 	return c.BrightGreen(arg)
 }
 
-func BrightYellow(arg interface{}) aurora.Value {
+func BrightYellow(arg any) aurora.Value {
 	return c.BrightYellow(arg)
 }
 
-func BrightBlue(arg interface{}) aurora.Value {
+func BrightBlue(arg any) aurora.Value {
 	return c.BrightBlue(arg)
 }
 
-func BrightMagenta(arg interface{}) aurora.Value {
+func BrightMagenta(arg any) aurora.Value {
 	return c.BrightMagenta(arg)
 }
 
-func BrightCyan(arg interface{}) aurora.Value {
+func BrightCyan(arg any) aurora.Value {
 	return c.BrightCyan(arg)
 }
 
-func BrightWhite(arg interface{}) aurora.Value {
+func BrightWhite(arg any) aurora.Value {
 	return c.BrightWhite(arg)
 }
 
-func Index(n aurora.ColorIndex, arg interface{}) aurora.Value {
+func Index(n aurora.ColorIndex, arg any) aurora.Value {
 	return c.Index(n, arg)
 }
 
-func Gray(n aurora.GrayIndex, arg interface{}) aurora.Value {
+func Gray(n aurora.GrayIndex, arg any) aurora.Value {
 	return c.Gray(n, arg)
 }
 
-func BgBlack(arg interface{}) aurora.Value {
+func BgBlack(arg any) aurora.Value {
 	return c.BgBlack(arg)
 }
 
-func BgRed(arg interface{}) aurora.Value {
+func BgRed(arg any) aurora.Value {
 	return c.BgRed(arg)
 }
 
-func BgGreen(arg interface{}) aurora.Value {
+func BgGreen(arg any) aurora.Value {
 	return c.BgGreen(arg)
 }
 
-func BgYellow(arg interface{}) aurora.Value {
+func BgYellow(arg any) aurora.Value {
 	return c.BgYellow(arg)
 }
 
-func BgBlue(arg interface{}) aurora.Value {
+func BgBlue(arg any) aurora.Value {
 	return c.BgBlue(arg)
 }
 
-func BgMagenta(arg interface{}) aurora.Value {
+func BgMagenta(arg any) aurora.Value {
 	return c.BgMagenta(arg)
 }
 
-func BgCyan(arg interface{}) aurora.Value {
+func BgCyan(arg any) aurora.Value {
 	return c.BgCyan(arg)
 }
 
-func BgWhite(arg interface{}) aurora.Value {
+func BgWhite(arg any) aurora.Value {
 	return c.BgWhite(arg)
 }
 
-func BgBrightBlack(arg interface{}) aurora.Value {
+func BgBrightBlack(arg any) aurora.Value {
 	return c.BgBrightBlack(arg)
 }
 
-func BgBrightRed(arg interface{}) aurora.Value {
+func BgBrightRed(arg any) aurora.Value {
 	return c.BgBrightRed(arg)
 }
 
-func BgBrightGreen(arg interface{}) aurora.Value {
+func BgBrightGreen(arg any) aurora.Value {
 	return c.BgBrightGreen(arg)
 }
 
-func BgBrightYellow(arg interface{}) aurora.Value {
+func BgBrightYellow(arg any) aurora.Value {
 	return c.BgBrightYellow(arg)
 }
 
-func BgBrightBlue(arg interface{}) aurora.Value {
+func BgBrightBlue(arg any) aurora.Value {
 	return c.BgBrightBlue(arg)
 }
 
-func BgBrightMagenta(arg interface{}) aurora.Value {
+func BgBrightMagenta(arg any) aurora.Value {
 	return c.BgBrightMagenta(arg)
 }
 
-func BgBrightCyan(arg interface{}) aurora.Value {
+func BgBrightCyan(arg any) aurora.Value {
 	return c.BgBrightCyan(arg)
 }
 
-func BgBrightWhite(arg interface{}) aurora.Value {
+func BgBrightWhite(arg any) aurora.Value {
 	return c.BgBrightWhite(arg)
 }
 
-func BgIndex(n aurora.ColorIndex, arg interface{}) aurora.Value {
+func BgIndex(n aurora.ColorIndex, arg any) aurora.Value {
 	return c.BgIndex(n, arg)
 }
 
-func BgGray(n aurora.GrayIndex, arg interface{}) aurora.Value {
+func BgGray(n aurora.GrayIndex, arg any) aurora.Value {
 	return c.BgGray(n, arg)
 }
 
-func Colorize(arg interface{}, color aurora.Color) aurora.Value {
+func Colorize(arg any, color aurora.Color) aurora.Value {
 	return c.Colorize(arg, color)
 }
 
-func Hyperlink(arg interface{}, target string, params ...aurora.HyperlinkParam) aurora.Value {
+func Hyperlink(arg any, target string, params ...aurora.HyperlinkParam) aurora.Value {
 	return c.Hyperlink(arg, target, params...)
 }
 
-func HyperlinkTarget(arg interface{}) (target string) {
+func HyperlinkTarget(arg any) (target string) {
 	return c.HyperlinkTarget(arg)
 }
 
-func HyperlinkParams(arg interface{}) (params []aurora.HyperlinkParam) {
+func HyperlinkParams(arg any) (params []aurora.HyperlinkParam) {
 	return c.HyperlinkParams(arg)
 }
 
-func Sprintf(format interface{}, args ...interface{}) string {
+func Sprintf(format any, args ...any) string {
 	return c.Sprintf(format, args...)
 }

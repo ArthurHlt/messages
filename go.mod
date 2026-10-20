@@ -1,19 +1,19 @@
 module github.com/ArthurHlt/messages
 
-go 1.20
+go 1.27
 
 require (
+	github.com/jwalton/go-supportscolor v1.2.0
 	github.com/logrusorgru/aurora/v4 v4.0.0
-	github.com/mattn/go-isatty v0.0.18
+	github.com/mattn/go-isatty v0.0.24
 	github.com/theckman/yacspin v0.13.12
 )
 
 require (
 	github.com/fatih/color v1.13.0 // indirect
-	github.com/jwalton/go-supportscolor v1.2.0 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
-	golang.org/x/sys v0.6.0 // indirect
+	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/term v0.0.0-20210220032956-6a3ed077a48d // indirect
 )
